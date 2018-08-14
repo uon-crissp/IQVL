@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>ClosedXML</id>
+    <version>0.93.0</version>
+    <authors>Manuel de Leon,Amir Ghezelbash,Francois Botha,Aleksei Pankratev</authors>
+    <owners>Manuel de Leon,Amir Ghezelbash,Francois Botha,Aleksei Pankratev</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/ClosedXML/ClosedXML/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ClosedXML/ClosedXML</projectUrl>
+    <iconUrl>https://github.com/ClosedXML/ClosedXML/blob/develop/resources/logo/favicon-01.png</iconUrl>
+    <description>ClosedXML makes it easier for developers to create Excel 2007+ (.xlsx, .xlsm, etc) files. It provides a nice object oriented way to manipulate the files (similar to VBA) without dealing with the hassles of XML Documents. It can be used by any .NET language like C# and VisualBasic.NET.</description>
+    <releaseNotes>See https://github.com/ClosedXML/ClosedXML/releases/tag/0.93.0</releaseNotes>
+    <copyright>MIT</copyright>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="DocumentFormat.OpenXml" version="2.7.2" exclude="Build,Analyzers" />
+        <dependency id="ExcelNumberFormat" version="1.0.3" exclude="Build,Analyzers" />
+        <dependency id="FastMember.Signed" version="1.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="DocumentFormat.OpenXml" version="2.7.2" exclude="Build,Analyzers" />
+        <dependency id="ExcelNumberFormat" version="1.0.3" exclude="Build,Analyzers" />
+        <dependency id="FastMember.Signed" version="1.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="DocumentFormat.OpenXml" version="2.7.2" exclude="Build,Analyzers" />
+        <dependency id="ExcelNumberFormat" version="1.0.3" exclude="Build,Analyzers" />
+        <dependency id="FastMember.Signed" version="1.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

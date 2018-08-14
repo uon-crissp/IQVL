@@ -92,10 +92,9 @@
             this.tbcMain.Controls.Add(this.tpUpload);
             this.tbcMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbcMain.Location = new System.Drawing.Point(0, 0);
-            this.tbcMain.Margin = new System.Windows.Forms.Padding(6);
             this.tbcMain.Name = "tbcMain";
             this.tbcMain.SelectedIndex = 0;
-            this.tbcMain.Size = new System.Drawing.Size(2718, 1155);
+            this.tbcMain.Size = new System.Drawing.Size(802, 458);
             this.tbcMain.TabIndex = 0;
             this.tbcMain.SelectedIndexChanged += new System.EventHandler(this.tbcMain_SelectedIndexChanged);
             // 
@@ -103,11 +102,10 @@
             // 
             this.tpGenerate.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tpGenerate.Controls.Add(this.pnlContent);
-            this.tpGenerate.Location = new System.Drawing.Point(8, 39);
-            this.tpGenerate.Margin = new System.Windows.Forms.Padding(6);
+            this.tpGenerate.Location = new System.Drawing.Point(4, 22);
             this.tpGenerate.Name = "tpGenerate";
-            this.tpGenerate.Padding = new System.Windows.Forms.Padding(6);
-            this.tpGenerate.Size = new System.Drawing.Size(2702, 1108);
+            this.tpGenerate.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tpGenerate.Size = new System.Drawing.Size(794, 432);
             this.tpGenerate.TabIndex = 0;
             this.tpGenerate.Text = "Generate VL List";
             // 
@@ -120,20 +118,18 @@
             this.pnlContent.Controls.Add(this.pnlProgress);
             this.pnlContent.Controls.Add(this.pnlViralloadList);
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(6, 6);
-            this.pnlContent.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlContent.Location = new System.Drawing.Point(3, 3);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(2690, 1096);
+            this.pnlContent.Size = new System.Drawing.Size(788, 426);
             this.pnlContent.TabIndex = 0;
             // 
             // pnlGrid
             // 
             this.pnlGrid.Controls.Add(this.dgvResults);
             this.pnlGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlGrid.Location = new System.Drawing.Point(658, 92);
-            this.pnlGrid.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlGrid.Location = new System.Drawing.Point(329, 48);
             this.pnlGrid.Name = "pnlGrid";
-            this.pnlGrid.Size = new System.Drawing.Size(2032, 842);
+            this.pnlGrid.Size = new System.Drawing.Size(459, 294);
             this.pnlGrid.TabIndex = 6;
             this.pnlGrid.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGrid_Paint);
             // 
@@ -146,9 +142,8 @@
             this.dgvResults.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvResults.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvResults.Location = new System.Drawing.Point(0, 0);
-            this.dgvResults.Margin = new System.Windows.Forms.Padding(6);
             this.dgvResults.Name = "dgvResults";
-            this.dgvResults.Size = new System.Drawing.Size(2032, 842);
+            this.dgvResults.Size = new System.Drawing.Size(459, 294);
             this.dgvResults.TabIndex = 0;
             this.dgvResults.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResults_CellContentClick);
             // 
@@ -161,10 +156,10 @@
             this.pnlButtons.Controls.Add(this.picProgressCsv);
             this.pnlButtons.Controls.Add(this.btnGenerateSelectedList);
             this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlButtons.Location = new System.Drawing.Point(658, 934);
-            this.pnlButtons.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlButtons.Location = new System.Drawing.Point(329, 342);
+            this.pnlButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlButtons.Name = "pnlButtons";
-            this.pnlButtons.Size = new System.Drawing.Size(2032, 162);
+            this.pnlButtons.Size = new System.Drawing.Size(459, 84);
             this.pnlButtons.TabIndex = 5;
             // 
             // btnGenerateCsvList
@@ -172,10 +167,9 @@
             this.btnGenerateCsvList.AutoSize = true;
             this.btnGenerateCsvList.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateCsvList.ForeColor = System.Drawing.Color.Teal;
-            this.btnGenerateCsvList.Location = new System.Drawing.Point(446, 69);
-            this.btnGenerateCsvList.Margin = new System.Windows.Forms.Padding(6);
+            this.btnGenerateCsvList.Location = new System.Drawing.Point(223, 36);
             this.btnGenerateCsvList.Name = "btnGenerateCsvList";
-            this.btnGenerateCsvList.Size = new System.Drawing.Size(382, 77);
+            this.btnGenerateCsvList.Size = new System.Drawing.Size(191, 40);
             this.btnGenerateCsvList.TabIndex = 0;
             this.btnGenerateCsvList.Text = "Generate CSV from the List";
             this.btnGenerateCsvList.UseVisualStyleBackColor = true;
@@ -184,10 +178,9 @@
             // lblNotifycsv
             // 
             this.lblNotifycsv.AutoSize = true;
-            this.lblNotifycsv.Location = new System.Drawing.Point(32, 15);
-            this.lblNotifycsv.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNotifycsv.Location = new System.Drawing.Point(16, 8);
             this.lblNotifycsv.Name = "lblNotifycsv";
-            this.lblNotifycsv.Size = new System.Drawing.Size(0, 25);
+            this.lblNotifycsv.Size = new System.Drawing.Size(0, 13);
             this.lblNotifycsv.TabIndex = 3;
             // 
             // btnAddNewList
@@ -195,10 +188,9 @@
             this.btnAddNewList.AutoSize = true;
             this.btnAddNewList.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewList.ForeColor = System.Drawing.Color.Teal;
-            this.btnAddNewList.Location = new System.Drawing.Point(952, 69);
-            this.btnAddNewList.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAddNewList.Location = new System.Drawing.Point(476, 36);
             this.btnAddNewList.Name = "btnAddNewList";
-            this.btnAddNewList.Size = new System.Drawing.Size(382, 77);
+            this.btnAddNewList.Size = new System.Drawing.Size(191, 40);
             this.btnAddNewList.TabIndex = 1;
             this.btnAddNewList.Text = "Add To The List";
             this.btnAddNewList.UseVisualStyleBackColor = true;
@@ -207,10 +199,9 @@
             // picProgressCsv
             // 
             this.picProgressCsv.BackColor = System.Drawing.Color.White;
-            this.picProgressCsv.Location = new System.Drawing.Point(22, 69);
-            this.picProgressCsv.Margin = new System.Windows.Forms.Padding(6);
+            this.picProgressCsv.Location = new System.Drawing.Point(11, 36);
             this.picProgressCsv.Name = "picProgressCsv";
-            this.picProgressCsv.Size = new System.Drawing.Size(126, 69);
+            this.picProgressCsv.Size = new System.Drawing.Size(63, 36);
             this.picProgressCsv.TabIndex = 4;
             this.picProgressCsv.TabStop = false;
             // 
@@ -218,10 +209,9 @@
             // 
             this.btnGenerateSelectedList.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateSelectedList.ForeColor = System.Drawing.Color.Teal;
-            this.btnGenerateSelectedList.Location = new System.Drawing.Point(1440, 69);
-            this.btnGenerateSelectedList.Margin = new System.Windows.Forms.Padding(6);
+            this.btnGenerateSelectedList.Location = new System.Drawing.Point(720, 36);
             this.btnGenerateSelectedList.Name = "btnGenerateSelectedList";
-            this.btnGenerateSelectedList.Size = new System.Drawing.Size(382, 77);
+            this.btnGenerateSelectedList.Size = new System.Drawing.Size(191, 40);
             this.btnGenerateSelectedList.TabIndex = 2;
             this.btnGenerateSelectedList.Text = "Generate Csv for SelectedList";
             this.btnGenerateSelectedList.UseVisualStyleBackColor = true;
@@ -237,20 +227,18 @@
             this.pnlProgress.Controls.Add(this.picProgress);
             this.pnlProgress.Controls.Add(this.lblNotify);
             this.pnlProgress.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlProgress.Location = new System.Drawing.Point(658, 0);
-            this.pnlProgress.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlProgress.Location = new System.Drawing.Point(329, 0);
             this.pnlProgress.Name = "pnlProgress";
-            this.pnlProgress.Size = new System.Drawing.Size(2032, 92);
+            this.pnlProgress.Size = new System.Drawing.Size(459, 48);
             this.pnlProgress.TabIndex = 1;
             this.pnlProgress.Visible = false;
             // 
             // rdbClientIpNo
             // 
             this.rdbClientIpNo.AutoSize = true;
-            this.rdbClientIpNo.Location = new System.Drawing.Point(1064, 35);
-            this.rdbClientIpNo.Margin = new System.Windows.Forms.Padding(6);
+            this.rdbClientIpNo.Location = new System.Drawing.Point(532, 18);
             this.rdbClientIpNo.Name = "rdbClientIpNo";
-            this.rdbClientIpNo.Size = new System.Drawing.Size(142, 29);
+            this.rdbClientIpNo.Size = new System.Drawing.Size(74, 17);
             this.rdbClientIpNo.TabIndex = 5;
             this.rdbClientIpNo.TabStop = true;
             this.rdbClientIpNo.Text = "ClientIpNo";
@@ -259,10 +247,9 @@
             // rdbName
             // 
             this.rdbName.AutoSize = true;
-            this.rdbName.Location = new System.Drawing.Point(932, 35);
-            this.rdbName.Margin = new System.Windows.Forms.Padding(6);
+            this.rdbName.Location = new System.Drawing.Point(466, 18);
             this.rdbName.Name = "rdbName";
-            this.rdbName.Size = new System.Drawing.Size(99, 29);
+            this.rdbName.Size = new System.Drawing.Size(53, 17);
             this.rdbName.TabIndex = 4;
             this.rdbName.TabStop = true;
             this.rdbName.Text = "Name";
@@ -272,30 +259,27 @@
             // 
             this.lblSearchName.AutoSize = true;
             this.lblSearchName.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearchName.Location = new System.Drawing.Point(784, 37);
-            this.lblSearchName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblSearchName.Location = new System.Drawing.Point(392, 19);
             this.lblSearchName.Name = "lblSearchName";
-            this.lblSearchName.Size = new System.Drawing.Size(118, 27);
+            this.lblSearchName.Size = new System.Drawing.Size(61, 15);
             this.lblSearchName.TabIndex = 3;
             this.lblSearchName.Text = "Search by:";
             // 
             // txtSearchbyName
             // 
-            this.txtSearchbyName.Location = new System.Drawing.Point(1238, 27);
-            this.txtSearchbyName.Margin = new System.Windows.Forms.Padding(6);
+            this.txtSearchbyName.Location = new System.Drawing.Point(619, 14);
             this.txtSearchbyName.Multiline = true;
             this.txtSearchbyName.Name = "txtSearchbyName";
-            this.txtSearchbyName.Size = new System.Drawing.Size(462, 42);
+            this.txtSearchbyName.Size = new System.Drawing.Size(233, 24);
             this.txtSearchbyName.TabIndex = 2;
             this.txtSearchbyName.TextChanged += new System.EventHandler(this.txtSearchbyName_TextChanged);
             // 
             // picProgress
             // 
             this.picProgress.BackColor = System.Drawing.Color.Transparent;
-            this.picProgress.Location = new System.Drawing.Point(218, 6);
-            this.picProgress.Margin = new System.Windows.Forms.Padding(6);
+            this.picProgress.Location = new System.Drawing.Point(109, 3);
             this.picProgress.Name = "picProgress";
-            this.picProgress.Size = new System.Drawing.Size(88, 81);
+            this.picProgress.Size = new System.Drawing.Size(44, 42);
             this.picProgress.TabIndex = 1;
             this.picProgress.TabStop = false;
             // 
@@ -304,10 +288,9 @@
             this.lblNotify.AutoSize = true;
             this.lblNotify.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotify.ForeColor = System.Drawing.Color.Black;
-            this.lblNotify.Location = new System.Drawing.Point(32, 33);
-            this.lblNotify.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNotify.Location = new System.Drawing.Point(16, 17);
             this.lblNotify.Name = "lblNotify";
-            this.lblNotify.Size = new System.Drawing.Size(0, 30);
+            this.lblNotify.Size = new System.Drawing.Size(0, 13);
             this.lblNotify.TabIndex = 0;
             // 
             // pnlViralloadList
@@ -323,38 +306,34 @@
             this.pnlViralloadList.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlViralloadList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlViralloadList.Location = new System.Drawing.Point(0, 0);
-            this.pnlViralloadList.Margin = new System.Windows.Forms.Padding(6);
             this.pnlViralloadList.Name = "pnlViralloadList";
-            this.pnlViralloadList.Size = new System.Drawing.Size(658, 1096);
+            this.pnlViralloadList.Size = new System.Drawing.Size(329, 426);
             this.pnlViralloadList.TabIndex = 0;
             // 
             // dtptodate
             // 
             this.dtptodate.CustomFormat = "yyyy-MM-dd";
             this.dtptodate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtptodate.Location = new System.Drawing.Point(146, 417);
-            this.dtptodate.Margin = new System.Windows.Forms.Padding(6);
+            this.dtptodate.Location = new System.Drawing.Point(73, 217);
             this.dtptodate.Name = "dtptodate";
-            this.dtptodate.Size = new System.Drawing.Size(400, 37);
+            this.dtptodate.Size = new System.Drawing.Size(202, 22);
             this.dtptodate.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 425);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(15, 221);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 30);
+            this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "ToDate ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 327);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(15, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 30);
+            this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "FromDate";
             // 
@@ -362,19 +341,17 @@
             // 
             this.dtpfromdate.CustomFormat = "yyyy-MM-dd";
             this.dtpfromdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpfromdate.Location = new System.Drawing.Point(146, 319);
-            this.dtpfromdate.Margin = new System.Windows.Forms.Padding(6);
+            this.dtpfromdate.Location = new System.Drawing.Point(73, 166);
             this.dtpfromdate.Name = "dtpfromdate";
-            this.dtpfromdate.Size = new System.Drawing.Size(400, 37);
+            this.dtpfromdate.Size = new System.Drawing.Size(202, 22);
             this.dtpfromdate.TabIndex = 3;
             // 
             // optAllViralLoads
             // 
             this.optAllViralLoads.AutoSize = true;
-            this.optAllViralLoads.Location = new System.Drawing.Point(30, 221);
-            this.optAllViralLoads.Margin = new System.Windows.Forms.Padding(6);
+            this.optAllViralLoads.Location = new System.Drawing.Point(15, 115);
             this.optAllViralLoads.Name = "optAllViralLoads";
-            this.optAllViralLoads.Size = new System.Drawing.Size(373, 34);
+            this.optAllViralLoads.Size = new System.Drawing.Size(189, 17);
             this.optAllViralLoads.TabIndex = 2;
             this.optAllViralLoads.Text = "ViralLoad With Or Without Results";
             this.optAllViralLoads.UseVisualStyleBackColor = true;
@@ -384,10 +361,9 @@
             this.optWithoutviralloads.AutoSize = true;
             this.optWithoutviralloads.Checked = true;
             this.optWithoutviralloads.ForeColor = System.Drawing.Color.Black;
-            this.optWithoutviralloads.Location = new System.Drawing.Point(30, 115);
-            this.optWithoutviralloads.Margin = new System.Windows.Forms.Padding(6);
+            this.optWithoutviralloads.Location = new System.Drawing.Point(15, 60);
             this.optWithoutviralloads.Name = "optWithoutviralloads";
-            this.optWithoutviralloads.Size = new System.Drawing.Size(370, 34);
+            this.optWithoutviralloads.Size = new System.Drawing.Size(187, 17);
             this.optWithoutviralloads.TabIndex = 1;
             this.optWithoutviralloads.TabStop = true;
             this.optWithoutviralloads.Text = "Patients without ViralLoad Results";
@@ -398,9 +374,8 @@
             this.btnGenerateVL.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGenerateVL.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnGenerateVL.Location = new System.Drawing.Point(0, 0);
-            this.btnGenerateVL.Margin = new System.Windows.Forms.Padding(6);
             this.btnGenerateVL.Name = "btnGenerateVL";
-            this.btnGenerateVL.Size = new System.Drawing.Size(658, 92);
+            this.btnGenerateVL.Size = new System.Drawing.Size(329, 48);
             this.btnGenerateVL.TabIndex = 0;
             this.btnGenerateVL.Text = "Generate VL List";
             this.btnGenerateVL.UseVisualStyleBackColor = true;
@@ -412,11 +387,10 @@
             this.tpUpload.Controls.Add(this.pnlMain);
             this.tpUpload.Controls.Add(this.pnlNavigation);
             this.tpUpload.Controls.Add(this.pnlBrowse);
-            this.tpUpload.Location = new System.Drawing.Point(8, 39);
-            this.tpUpload.Margin = new System.Windows.Forms.Padding(6);
+            this.tpUpload.Location = new System.Drawing.Point(4, 22);
             this.tpUpload.Name = "tpUpload";
-            this.tpUpload.Padding = new System.Windows.Forms.Padding(6);
-            this.tpUpload.Size = new System.Drawing.Size(2702, 1108);
+            this.tpUpload.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tpUpload.Size = new System.Drawing.Size(794, 432);
             this.tpUpload.TabIndex = 1;
             this.tpUpload.Text = "Upload VL Results";
             // 
@@ -424,10 +398,9 @@
             // 
             this.pnlMain.Controls.Add(this.dgvResultUpload);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(6, 116);
-            this.pnlMain.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlMain.Location = new System.Drawing.Point(3, 60);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(2690, 865);
+            this.pnlMain.Size = new System.Drawing.Size(788, 306);
             this.pnlMain.TabIndex = 2;
             // 
             // dgvResultUpload
@@ -437,9 +410,8 @@
             this.dgvResultUpload.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultUpload.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvResultUpload.Location = new System.Drawing.Point(0, 0);
-            this.dgvResultUpload.Margin = new System.Windows.Forms.Padding(6);
             this.dgvResultUpload.Name = "dgvResultUpload";
-            this.dgvResultUpload.Size = new System.Drawing.Size(2690, 865);
+            this.dgvResultUpload.Size = new System.Drawing.Size(788, 306);
             this.dgvResultUpload.TabIndex = 0;
             // 
             // pnlNavigation
@@ -449,10 +421,9 @@
             this.pnlNavigation.Controls.Add(this.lblUploadNotify);
             this.pnlNavigation.Controls.Add(this.btnUpdate);
             this.pnlNavigation.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlNavigation.Location = new System.Drawing.Point(6, 981);
-            this.pnlNavigation.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlNavigation.Location = new System.Drawing.Point(3, 366);
             this.pnlNavigation.Name = "pnlNavigation";
-            this.pnlNavigation.Size = new System.Drawing.Size(2690, 121);
+            this.pnlNavigation.Size = new System.Drawing.Size(788, 63);
             this.pnlNavigation.TabIndex = 1;
             // 
             // picUploadNotify
@@ -460,10 +431,9 @@
             this.picUploadNotify.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.picUploadNotify.Location = new System.Drawing.Point(10, 12);
-            this.picUploadNotify.Margin = new System.Windows.Forms.Padding(6);
+            this.picUploadNotify.Location = new System.Drawing.Point(5, 6);
             this.picUploadNotify.Name = "picUploadNotify";
-            this.picUploadNotify.Size = new System.Drawing.Size(298, 100);
+            this.picUploadNotify.Size = new System.Drawing.Size(0, 52);
             this.picUploadNotify.TabIndex = 2;
             this.picUploadNotify.TabStop = false;
             // 
@@ -473,20 +443,18 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblUploadNotify.AutoSize = true;
             this.lblUploadNotify.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUploadNotify.Location = new System.Drawing.Point(276, 48);
-            this.lblUploadNotify.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblUploadNotify.Location = new System.Drawing.Point(138, 25);
             this.lblUploadNotify.Name = "lblUploadNotify";
-            this.lblUploadNotify.Size = new System.Drawing.Size(0, 29);
+            this.lblUploadNotify.Size = new System.Drawing.Size(0, 15);
             this.lblUploadNotify.TabIndex = 1;
             // 
             // btnUpdate
             // 
             this.btnUpdate.AutoSize = true;
             this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnUpdate.Location = new System.Drawing.Point(2196, 0);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(6);
+            this.btnUpdate.Location = new System.Drawing.Point(541, 0);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(494, 121);
+            this.btnUpdate.Size = new System.Drawing.Size(247, 63);
             this.btnUpdate.TabIndex = 0;
             this.btnUpdate.Text = "UPDATE INTO IQCARE";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -497,28 +465,25 @@
             this.pnlBrowse.Controls.Add(this.pgbUpdateIQCare);
             this.pnlBrowse.Controls.Add(this.btnImport);
             this.pnlBrowse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlBrowse.Location = new System.Drawing.Point(6, 6);
-            this.pnlBrowse.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlBrowse.Location = new System.Drawing.Point(3, 3);
             this.pnlBrowse.Name = "pnlBrowse";
-            this.pnlBrowse.Size = new System.Drawing.Size(2690, 110);
+            this.pnlBrowse.Size = new System.Drawing.Size(788, 57);
             this.pnlBrowse.TabIndex = 0;
             // 
             // pgbUpdateIQCare
             // 
-            this.pgbUpdateIQCare.Location = new System.Drawing.Point(1158, 35);
-            this.pgbUpdateIQCare.Margin = new System.Windows.Forms.Padding(6);
+            this.pgbUpdateIQCare.Location = new System.Drawing.Point(579, 18);
             this.pgbUpdateIQCare.Name = "pgbUpdateIQCare";
-            this.pgbUpdateIQCare.Size = new System.Drawing.Size(1126, 44);
+            this.pgbUpdateIQCare.Size = new System.Drawing.Size(563, 23);
             this.pgbUpdateIQCare.TabIndex = 1;
             this.pgbUpdateIQCare.Visible = false;
             // 
             // btnImport
             // 
             this.btnImport.AutoSize = true;
-            this.btnImport.Location = new System.Drawing.Point(50, 35);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImport.Location = new System.Drawing.Point(25, 18);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(342, 67);
+            this.btnImport.Size = new System.Drawing.Size(171, 35);
             this.btnImport.TabIndex = 0;
             this.btnImport.Text = "BROWSE  FILE";
             this.btnImport.UseVisualStyleBackColor = true;
@@ -530,12 +495,11 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2718, 1155);
+            this.ClientSize = new System.Drawing.Size(802, 458);
             this.Controls.Add(this.tbcMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VLJustification System";

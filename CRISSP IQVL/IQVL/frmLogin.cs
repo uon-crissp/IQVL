@@ -196,6 +196,7 @@ namespace IQVL
             SetControlPropertyThreadSafe(cboServer, "DataSource", null);
             SetControlPropertyThreadSafe(cboServer, "Enabled", false);
             DataTable servers = SqlDataSourceEnumerator.Instance.GetDataSources();
+
             if (servers.Rows.Count > 0)
             {
                 string displayMember = string.Empty;

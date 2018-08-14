@@ -57,15 +57,19 @@ namespace IQVL.DataLayer
         }
         public static string GetServerType()
         {
-            var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            var appSettings = configFile.AppSettings.Settings;
-            return appSettings["ServerType"].Value.ToLower();
+            //var configFile = ConfigurationManager.OpenExeConfiguration(@"App.Config");
+            //var appSettings = configFile.AppSettings.Settings;
+            //return appSettings["ServerType"].Value.ToLower();
+            return ConfigurationManager.AppSettings["ServerType"].ToLower();
         }
         public static String GetConnString()
         {
-             var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            var appSettings = configFile.AppSettings.Settings;
-            return ClsUtility.Decrypt(appSettings["ConnectionString"].Value);
+            //var configFile = ConfigurationManager.OpenExeConfiguration(@"App.Config");
+            //var appSettings = configFile.AppSettings.Settings;
+            //return ClsUtility.Decrypt(appSettings["ConnectionString"].Value);
+
+            string scon = ConfigurationManager.AppSettings["ConnectionString"];
+            return ClsUtility.Decrypt(scon);
 
             /*string versionDependent = Application.UserAppDataRegistry.Name;
             string versionIndependent = versionDependent.Substring(0, versionDependent.LastIndexOf("\\"));
