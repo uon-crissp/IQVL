@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IQCare" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress_2014;Initial Catalog=IQCare;User ID=sa" SettingsObjectName="IQVL2.Properties.Settings" SettingsPropertyName="IQCareConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.pr_IQVL_SaveLabResult" Method="pr_IQVL_SaveLabResult">
+    <Parameter Name="Patientid" Parameter="patientid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OrderDate" Parameter="orderDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Reporteddate" Parameter="reporteddate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="result" Type="System.Decimal" DbType="Decimal(15,0)" />
+    <Parameter Name="userid" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

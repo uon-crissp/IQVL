@@ -362,43 +362,34 @@ namespace IQVL
         {
             try
             {
+                string server = cboServer.Text.Trim();
+                string serverUserName = txtUserNameServer.Text.Trim();
+                string serverPassword = txtPassword.Text;
+                string iqcareDB = cboDatabase.Text.Trim();
+                string serverIP = string.Empty;
+                if (server.IndexOf("\\") != -1)
+                {
+                    serverIP = server.Substring(0, server.IndexOf("\\"));
+                }
+                else
+                {
 
-               
-
-              string server = cboServer.Text.Trim();
-                    string serverUserName = txtUserNameServer.Text.Trim();
-                    string serverPassword = txtPassword.Text;
-                    string iqcareDB = cboDatabase.Text.Trim();
-                    string serverIP = string.Empty;
-                    if (server.IndexOf("\\") != -1)
-                    {
-                        serverIP = server.Substring(0, server.IndexOf("\\"));
-                    }
-                    else
-                    {
-
-                        serverIP = server;
-                    }
-                    if (serverIP == ".")
-                    {
-                        serverIP = "localhost";
-                    }
-                    Thread saveSettingsT = new Thread(() => SaveSettings(server, serverIP, serverUserName, serverPassword, iqcareDB));
-                    saveSettingsT.SetApartmentState(ApartmentState.STA);
-                    saveSettingsT.Start();
-                
-
-                
-
+                    serverIP = server;
+                }
+                if (serverIP == ".")
+                {
+                    serverIP = "localhost";
+                }
+                Thread saveSettingsT = new Thread(() => SaveSettings(server, serverIP, serverUserName, serverPassword, iqcareDB));
+                saveSettingsT.SetApartmentState(ApartmentState.STA);
+                saveSettingsT.Start();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
-                if (ex.Message.Contains("Access"))
+                if (ex.Message.Contains("access"))
                 {
-                    MessageBox.Show("Kindly run as an administrator  to save the correct settings in the database");
-
-                   
+                    MessageBox.Show("Kindly run the application as an administrator  to save the correct settings in the database");
                 }
                 else
                 {
