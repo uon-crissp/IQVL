@@ -165,28 +165,61 @@ namespace IQVL2
         {
             int i=0;
             int iTotalRecords = dt.Rows.Count;
+            bool iResultsFromKNH;
+
+            if (dt.Columns[0].Caption == "Lab ID")
+            {
+                iResultsFromKNH = true;
+            }
+            else
+            {
+                iResultsFromKNH = false;
+            }
 
             foreach (DataRow row in dt.Rows)
             {
                 try
                 {
-                    string sPatientId = row["Patient CCC No"].ToString();
-                    DateTime OrderDate = Convert.ToDateTime(row["Date Collected"]);
-                    DateTime ReportedDate = Convert.ToDateTime(row["Date Dispatched"]);
-                    string sResult = row["Result"].ToString();
-                    int iUserId = userid;
-                    Decimal dResult = 0;
+                    string sPatientId;
+                    DateTime OrderDate;
+                    DateTime ReportedDate;
+                    string sResult;
 
-                    if (sResult.ToLower().Contains("ldl"))
+                    if (iResultsFromKNH)
                     {
-                        dResult = 0;
+                        sPatientId = row["Patient CCC No"].ToString();
+                        OrderDate = Convert.ToDateTime(row["Collection Date"]);
+                        ReportedDate = Convert.ToDateTime(row["Date of Testing"]);
+                        sResult = row["Viral Load"].ToString();
                     }
                     else
                     {
-                        dResult = Convert.ToDecimal(sResult);
+                        sPatientId = row["Patient CCC No"].ToString();
+                        OrderDate = Convert.ToDateTime(row["Date Collected"]);
+                        ReportedDate = Convert.ToDateTime(row["Date Tested"]);
+                        sResult = row["Result"].ToString();
                     }
 
-                    oDAL.pr_IQVL_SaveLabResult(sPatientId, OrderDate, ReportedDate, dResult, iUserId);
+                    int iUserId = userid;
+                    Decimal dResult = 0;
+
+                    if (sResult.ToLower().Contains("new sample") || sResult.ToLower().Contains("invalid"))
+                    {
+                        //Invalid result. Do not process
+                    }
+                    else
+                    {
+                        if (sResult.ToLower().Contains("ldl"))
+                        {
+                            dResult = 0;
+                        }
+                        else
+                        {
+                            dResult = Convert.ToDecimal(sResult);
+                        }
+
+                        oDAL.pr_IQVL_SaveLabResult(sPatientId.Trim(), OrderDate, ReportedDate, dResult, iUserId);
+                    }
                 }
                 catch(Exception ex)
                 {
@@ -232,10 +265,18 @@ namespace IQVL2
 
         private void cmdGenerateList_Click(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.WaitCursor;
-            DataSet ds = LoadVLOrders();
-            dgvOrders.DataSource = ds.Tables[0];
-            this.Cursor = Cursors.Default;
+            try
+            {
+                this.Cursor = Cursors.WaitCursor;
+                DataSet ds = LoadVLOrders();
+                dgvOrders.DataSource = ds.Tables[0];
+                this.Cursor = Cursors.Default;
+            }
+            catch (Exception ex)
+            {
+                this.Cursor = Cursors.Default;
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public DataSet LoadVLOrders()
@@ -246,6 +287,7 @@ namespace IQVL2
 
             SqlCommand command = new SqlCommand("pr_IQVL_LoadVLOrders", con);
             command.CommandType = CommandType.StoredProcedure;
+            command.CommandTimeout = 0;
 
             command.Parameters.Add(new SqlParameter("@fromdate", dateTimePicker1.Text));
             command.Parameters.Add(new SqlParameter("@todate", dateTimePicker2.Text));
